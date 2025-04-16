@@ -1,10 +1,10 @@
-import DashBoard from './DashBoard';
 import Board from '../Components/Board'; 
+import React from 'react';
+import DashBoard from './Dashboard';
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { useAppContext } from "../Context/AppContext";
 import { DndContext } from '@dnd-kit/core';
 import classes from "./Layout.module.css"; 
-import AuthProvider from '../Context/AuthContext';
 import Login from './Login';
 import PrivateRoute from './PrivateRoute';
 

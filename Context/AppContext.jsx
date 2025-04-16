@@ -29,8 +29,9 @@ const ContextProvider = ({ children }) => {
   };
 
   const getStartBoard=async()=>{
+    setBoard([]);
     try{
-     const response= await fetch("http://localhost:5097/api/Board/24", {
+     const response= await fetch("http://localhost:5097/api/Board/first-board", {
         method: "GET",
         headers: {
          'Accept': '*/*',

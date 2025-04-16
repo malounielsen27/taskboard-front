@@ -7,6 +7,7 @@ const AuthProvider = ({ children }) => {
 const [token,setToken]=useState(null);
 const [username, setUsername]=useState(null); 
 
+
 const login = (data) => {
     setToken(data.token);
     setUsername(data.username);
@@ -14,6 +15,8 @@ const login = (data) => {
 
   const logout = () => {
     setToken(null); 
+    setUsername(null);
+
   };
     return(
         <AuthContext.Provider value={{ token, login, logout, username }}>
